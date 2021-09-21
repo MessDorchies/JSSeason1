@@ -82,5 +82,12 @@
     ];
 
     // your code here
-
+    let ageOfPeople = [];
+    const reducer = (previousValue, currentValue) => previousValue + currentValue;
+    document.getElementById("run").addEventListener('click', function() {
+        people.forEach(element => { 
+            ageOfPeople.push(element.age);
+        })
+        console.log(ageOfPeople.reduce(reducer));
+    });
 })();

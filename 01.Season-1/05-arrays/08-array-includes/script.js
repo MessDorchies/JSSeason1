@@ -18,5 +18,8 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener('click', function() {
+        let isThereAnApple = (fruits.find(element => element == "apple"))? "yes" : "no" ;
+        console.log(isThereAnApple);
+        });
 })();

@@ -21,5 +21,9 @@
     ];
 
     // your code here
-
+    
+    document.getElementById("run").addEventListener('click', function() {
+        let newFruits = [...new Set(fruits)];
+        console.log(newFruits);
+    });
 })();

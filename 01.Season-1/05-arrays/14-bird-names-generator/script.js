@@ -31,4 +31,12 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener('click', function() {
+        let adj = Array.from(adjectives);
+        let randomBird = birds[Math.floor(Math.random()*12)];
+        let randomAdj = adj[Math.floor(Math.random()*adj.length)];
+        let pronom = (randomBird.fem) ? "La" : "Le";
+        (randomBird.fem) ? randomAdj += "e" : randomAdj = randomAdj;
+        document.getElementById("target").innerHTML = pronom + " " + randomBird.name + " " + randomAdj;
+    });
 })();
