@@ -19,4 +19,13 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener('click', function() {
+        computers.forEach(element => {
+            let id = element.id;
+            let available = (element.available != null) ? element.available : defaultProps.available;
+            let users = (element.user != null) ? element.user : defaultProps.user;
+            let os = (element.os != null) ? element.os : defaultProps.os;
+            console.log(id + " " + available + " " + users + " " + os);
+        });
+    })
 })();
