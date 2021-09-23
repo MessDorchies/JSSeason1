@@ -3,4 +3,12 @@
 
 (() => {
     // your code here
+    
+    document.getElementById("run").addEventListener('click', function(){
+        window.lib.getPosts((error, articles) => {
+            for (let article of articles) {
+                console.log(article);
+            } 
+    })
+})
 })();

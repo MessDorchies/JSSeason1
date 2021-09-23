@@ -3,4 +3,9 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener('click', () => {
+        window.lib.getPersons((error, person) => {
+            (error) ? console.error(error) : console.log(person);
+        })
+    })
 })();

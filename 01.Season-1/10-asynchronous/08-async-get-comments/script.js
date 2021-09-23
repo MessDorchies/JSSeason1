@@ -3,4 +3,18 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", async () => {
+        await window.lib.getPosts()
+            .then( async articles => {
+                for (let article of articles) {
+                    await window.lib.getComments(article.id)
+                        .then( async comment => {
+                            for (let com of comment){
+                                article.comments += JSON.stringify(com);
+                            }
+                            console.log(article);
+                        })
+                }
+            })
+    })
 })();
