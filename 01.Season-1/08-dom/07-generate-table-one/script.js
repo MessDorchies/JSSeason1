@@ -4,5 +4,5 @@
 (() => {
 
     // your code here
-
+    document.getElementById("target").innerHTML = "<table><td><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></td></table>";
 })();

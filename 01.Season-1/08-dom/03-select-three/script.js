@@ -4,5 +4,8 @@
 (() => {
 
     // your code here
-
+    let all = document.getElementsByClassName("target");
+    for(let i = 0; i < all.length; i++ ){
+        all[i].innerHTML = "Owned.";
+    }
 })();

@@ -12,5 +12,18 @@
     ];
 
     // your code here
-
+    let image = document.querySelector('img');
+    let iterator = 1;
+    function changeImg(){
+        image.src = gallery[iterator];
+        iterator++;
+        if(iterator > 4){
+            iterator = 0;
+        }
+    }
+    
+    document.getElementById("next").addEventListener('click', function(){
+        changeImg();
+    })
+    
 })();

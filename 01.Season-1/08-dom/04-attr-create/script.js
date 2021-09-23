@@ -4,5 +4,8 @@
 (() => {
 
     // your code here
-
+    let val = document.getElementById("source");
+    document.getElementById("target").innerHTML = "<img src=\'image.png\'>";
+    console.log(val.getAttribute('data-image'));
+    val.parentNode.removeChild(val);
 })();

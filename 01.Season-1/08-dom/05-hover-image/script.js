@@ -4,5 +4,9 @@
 (() => {
 
     // your code here
-
+    let image = document.querySelector('img');
+    image.addEventListener('mouseover', function() {
+        image.src = image.getAttribute('data-hover');
+    }) 
+    
 })();

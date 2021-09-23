@@ -4,5 +4,9 @@
 (() => {
 
     // your code here
-
+    document.getElementById("slider").addEventListener('click', function() {
+        let val = document.getElementById("slider").value;
+        document.getElementById("target").innerHTML = "0" + val;
+    })
+    
 })();
