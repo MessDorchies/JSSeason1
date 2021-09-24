@@ -86,8 +86,5 @@
         }
         
         target.innerHTML = finalValue;
-    })
-    
-    
-    
+    })   
 })();

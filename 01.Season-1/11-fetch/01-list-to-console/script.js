@@ -3,4 +3,9 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener('click', () => {
+        fetch("http://localhost:3000/heroes")
+            .then(retour => retour.json())
+            .then(heroes => console.log(heroes))
+    })
 })();
